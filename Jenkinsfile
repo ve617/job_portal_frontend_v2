@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    APP_ID = "CkZf7_bNvWLAayTnTykOa" 
+    APP_ID = "z3sNDlEJLH7fwFXxb23lo" 
   }
 
   parameters {
@@ -50,7 +50,7 @@ pipeline {
         '''
       }
       // Send success email notification
-      mail to: 'xaioene@gmail.com',
+      mail to: 'vellenaningthoujam20@gmail.com',
            subject: "Jenkins Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
            body: """Hello,
 
@@ -69,7 +69,7 @@ Jenkins
 
     failure {
       echo "❌ Pipeline failed, sending error email..."
-      mail to: 'xaioene@gmail.com',
+      mail to: 'vellenaningthoujam20@gmail.com',
            subject: "Jenkins Failure: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
            body: """Hello,
 
